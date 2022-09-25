@@ -2,6 +2,7 @@
   "homepage": "https://programmingwith-mano.github.io/southern-traders",
   "name": "southern-traders",
   "version": "0.1.0",
+  "private": false,
   "keywords": [
     "fashion",
     "fashion-cube",
