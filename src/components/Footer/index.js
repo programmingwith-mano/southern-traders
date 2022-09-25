@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import WhatsappLogo from "../../assets/images/whatsapp.png";
 
 function Footer(props) {
   return (
@@ -14,14 +15,19 @@ function Footer(props) {
           <div className="col-lg-6">
             <div className="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
               <ul className="footer_nav">
-                <li>
+                {/*<li>
                   <a href="#">Blog</a>
                 </li>
                 <li>
                   <a href="#">FAQs</a>
-                </li>
+                </li>*/}
                 <li>
-                  <a href="contact.html">Contact us</a>
+                  <div style={{textAlign: 'left'}}>
+                    <u>Contact us</u>
+                  <br/><b>SRI SOUTHERN TRADERS</b>
+                  <br/>175-EAST MASI STREET
+                  <br/>MADURAI - 625001.
+                  </div>               
                 </li>
               </ul>
             </div>
@@ -29,32 +35,14 @@ function Footer(props) {
           <div className="col-lg-6">
             <div className="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
               <ul>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>{" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i className="fab fa-pinterest-p"></i>{" "}
-                  </a>
-                </li>
+                  <li>
+                      <a href="http://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img>For orders contact: +91 9655366676</a>
+                  </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="row">
+        {/*<div className="row">
           <div className="col-lg-12">
             <div className="footer_nav_container">
               <div className="cr">
@@ -66,7 +54,7 @@ function Footer(props) {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </footer>
   );

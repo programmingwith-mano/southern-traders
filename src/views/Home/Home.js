@@ -62,20 +62,20 @@ class Home extends Component {
   };
 
   render() {
-    const { products, departments } = this.props;
+    const { products, departments, navigateProductList } = this.props;
     return (
       <div>
-        <HomeBanner />
-        <CategoryBanner />
-        {products ? (
+        {/*<HomeBanner />*/}
+        <CategoryBanner navigateProductList={navigateProductList} />
+        {/*products ? (
           <NewArrivals
             products={products}
             departments={departments}
             addToBag={this.addToBag}
           />
-        ) : null}
-        <Benefit />
-        <Advertisement />
+        ) : null*/}
+        {/*<Benefit />
+        <Advertisement />*/}
         {products ? (
           <BestSeller
             products={products}

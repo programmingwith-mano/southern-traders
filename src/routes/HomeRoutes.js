@@ -1,9 +1,3 @@
-/*
- ** Author: Santosh Kumar Dash
- ** Author URL: http://santoshdash.epizy.com/
- ** Github URL: https://github.com/quintuslabs/fashion-cube
- */
-
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
@@ -14,30 +8,40 @@ import BaseLayout from "../layouts/BaseLayout";
 import Home from "../views/Home/HomeContainer";
 import SingleProductContainer from "../views/Product/SingleProductContainer";
 import CategoryContainer from "../views/Category/CategoryContainer";
+import ProductList from "../components/Products/ProductList";
 
 var routes = [
   {
-    path: "/fashion-cube",
+    path: "/southern-traders",
     exact: true,
     layout: BaseLayout,
     component: Home,
   },
-
   {
     path: "/home",
     layout: BaseLayout,
-    component: () => <Redirect to="/fashion-cube" />,
+    component: () => <Redirect to="/southern-traders" />,
   },
   {
-    path: "/fashion-cube/single-product/:id",
+    path: "/southern-traders/single-product/:id",
     layout: BaseLayout,
     component: SingleProductContainer,
   },
   {
-    path: "/fashion-cube/shops/:category",
+    path: "/southern-traders/shops/:category",
     layout: BaseLayout,
     component: CategoryContainer,
   },
+  {
+    path: "/southern-traders/productlist/:item",
+    layout: BaseLayout,
+    component: ProductList,
+  },
+  {
+    path: "/",
+    layout: BaseLayout,
+    component: () => <Redirect to="/southern-traders" />,
+  }
 ];
 
 export default routes;

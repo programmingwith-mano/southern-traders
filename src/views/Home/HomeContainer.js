@@ -10,7 +10,7 @@ import {
 } from "../../redux/actions/productAction";
 import { connect } from "react-redux";
 import Home from "./Home";
-import { postCart } from "../../redux/actions/cartAction";
+import { postCart, navigateProductList } from "../../redux/actions/cartAction";
 
 const mapStoreToProps = state => ({
   products: state.product.products,
@@ -20,7 +20,8 @@ const mapStoreToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   getAllProducts: () => dispatch(getAllProducts()),
   applyFilters: filter_string => dispatch(applyFilters(filter_string)),
-  postCart: productId => dispatch(postCart(productId))
+  postCart: productId => dispatch(postCart(productId)),
+  navigateProductList: productName => dispatch(navigateProductList(productName))
 });
 
 export default connect(mapStoreToProps, mapDispatchToProps)(Home);

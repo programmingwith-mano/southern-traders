@@ -63,6 +63,39 @@ export const postCart = (productId, increase, decrease) => dispatch => {
     });
 };
 
+export const navigateProductList = (productName, increase, decrease) => dispatch => {
+  console.log('test');
+
+  let userId = Auth.getUserId();
+  dispatch({
+    type: POST_CART_BEGIN
+  });
+  return API({
+    method: "POST",
+    url: `users/${userId}/cart`,
+    data: {
+      userId,
+      productName,
+      increase,
+      decrease
+    }
+  })
+    .then(res => {
+      dispatch({
+        type: POST_CART_SUCCESS,
+        payload: res
+      });
+      return res;
+    })
+    .catch(error => {
+      dispatch({
+        type: POST_CART_FAIL,
+        payload: { error }
+      });
+      return error;
+    });
+};
+
 export const POST_CART_BEGIN = "POST_CART_BEGIN";
 export const POST_CART_SUCCESS = "POST_CART_SUCCESS";
 export const POST_CART_FAIL = "POST_CART_FAIL";

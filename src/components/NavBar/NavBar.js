@@ -1,15 +1,10 @@
-/*
- ** Author: Santosh Kumar Dash
- ** Author URL: http://santoshdash.epizy.com/
- ** Github URL: https://github.com/quintuslabs/fashion-cube
- */
-
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import HomeCartView from "../HomeCartView";
 import MobileMenu from "../MobileMenu";
 import device, { size } from "../../modules/mediaQuery";
 import MediaQuery from "react-responsive";
+import WhatsappLogo from "../../assets/images/whatsapp.png";
 
 class NavBar extends Component {
   constructor(props) {
@@ -40,15 +35,25 @@ class NavBar extends Component {
       <div className="main_nav_container">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 text-right">
+            <div className="col-lg-12 text-left">
+            {/*<div className="col">
+              <img height={100} width={100} src="logo.jpg" />
+            </div>*/}
               <div className="logo_container">
-                <Link to="/fashion-cube">
-                  Fashion<span>Cube</span>
+                <Link to="/southern-traders">
+                  ஸ்ரீ சதா்ன் <span>டிரேடா்ஸ்</span><br/>
+                  Sri Southern <span>Traders</span>
                 </Link>
               </div>
+              <MediaQuery query={device.max.tabletL}>
+                <div style={{textAlign: 'right'}}>
+                        <a href="http://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img><br/>FOR ORDERS CONTACT: <br/>+91 9655366676</a>                 
+                </div>
+              </MediaQuery>
+              
               <nav className="navbar">
                 <ul className="navbar_menu">
-                  <li>
+                  {/*<li>
                     <Link to="/home">home</Link>
                   </li>
                   <li className="mega-drop-down">
@@ -81,13 +86,16 @@ class NavBar extends Component {
                           })}
                       </div>
                     </div>
-                  </li>
+                        </li>
 
                   <li>
                     <a href="contact.html">contact</a>
+                  </li>*/}
+                  <li>
+                      <a href="http://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img>FOR ORDERS CONTACT: +91 9655366676</a>
                   </li>
                 </ul>
-                <ul className="navbar_user">
+                {/*<ul className="navbar_user">
                   <li>
                     <a href="#">
                       <i className="fa fa-search" aria-hidden="true"></i>
@@ -108,23 +116,23 @@ class NavBar extends Component {
                       )}
                     </a>
                   </li>
-                </ul>
-                <div
+                      </ul>*/}
+                {/*<div
                   className="hamburger_container"
                   onClick={() => this.handleMenuClicked()}
                 >
                   <i className="fa fa-bars" aria-hidden="true"></i>
-                </div>
+                    </div>*/}
               </nav>
             </div>
           </div>
         </div>
-        <MediaQuery query={device.max.tabletL}>
+        {/*<MediaQuery query={device.max.tabletL}>
           <MobileMenu
             activeClass={this.state.activeclass}
             onClose={() => this.handleMenuClicked()}
-          />
-        </MediaQuery>
+                    />
+        </MediaQuery>*/}
         {this.state.modalShow ? (
           <HomeCartView
             cart={cart}
