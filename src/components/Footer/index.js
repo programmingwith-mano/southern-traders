@@ -23,20 +23,20 @@ function Footer(props) {
                 </li>*/}
                 <li>
                   <div style={{textAlign: 'left'}}>
-                    <u>Contact us</u>
-                  <br/><b>SRI SOUTHERN TRADERS</b>
-                  <br/>175-EAST MASI STREET
-                  <br/>MADURAI - 625001.
-                  </div>               
-                </li>
-                <li>
-                  <div style={{textAlign: 'left'}}>
                     <u>தொடர்புக்கு</u>
                   <br/><b>ஸ்ரீ சதா்ன் டிரேடா்ஸ்</b>
                   <br/>175-கீழமாசி வீதி 
                   <br/>மதுரை - 625001.
                   </div>
                   </li>
+                <li>
+                  <div style={{textAlign: 'left'}}>
+                    <u>Contact us</u>
+                  <br/><b>SRI SOUTHERN TRADERS</b>
+                  <br/>175-EAST MASI STREET
+                  <br/>MADURAI - 625001.
+                  </div>               
+                </li>
               </ul>
             </div>
           </div>
