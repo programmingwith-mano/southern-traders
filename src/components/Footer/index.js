@@ -29,12 +29,21 @@ function Footer(props) {
                   <br/>MADURAI - 625001.
                   </div>               
                 </li>
+                <li>
+                  <div style={{textAlign: 'left'}}>
+                    <u>தொடர்புக்கு</u>
+                  <br/><b>ஸ்ரீ சதா்ன் டிரேடா்ஸ்</b>
+                  <br/>175-கீழமாசி வீதி 
+                  <br/>மதுரை - 625001.
+                  </div>
+                  </li>
               </ul>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
               <ul>
+                  
                   <li>
                       <a href="http://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img>For orders contact: +91 9655366676</a>
                   </li>

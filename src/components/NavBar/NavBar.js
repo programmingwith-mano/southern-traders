@@ -5,6 +5,7 @@ import MobileMenu from "../MobileMenu";
 import device, { size } from "../../modules/mediaQuery";
 import MediaQuery from "react-responsive";
 import WhatsappLogo from "../../assets/images/whatsapp.png";
+import Logo from "../../assets/images/logo.jpg";
 
 class NavBar extends Component {
   constructor(props) {
@@ -41,16 +42,25 @@ class NavBar extends Component {
             </div>*/}
               <div className="logo_container">
                 <Link to="/southern-traders">
-                  ஸ்ரீ சதா்ன் <span>டிரேடா்ஸ்</span><br/>
-                  Sri Southern <span>Traders</span>
+                  <table>
+                    <tr>
+                      <td>
+                        <img height={40} width={40} src={Logo} />
+                      </td>
+                      <td>
+                      ஸ்ரீ சதா்ன் <span>டிரேடா்ஸ்</span><br/>
+                      Sri Southern <span>Traders</span>
+                      </td>
+                    </tr>
+                  </table>
                 </Link>
               </div>
               <MediaQuery query={device.max.tabletL}>
                 <div style={{textAlign: 'right'}}>
-                        <a href="http://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img><br/>FOR ORDERS CONTACT: <br/>+91 9655366676</a>                 
+                        <a href="http://wa.me/+919655366676"><img height={30} width={30} src={WhatsappLogo}></img><br/>FOR ORDERS CONTACT: <br/>+91 9655366676</a>                 
                 </div>
               </MediaQuery>
-              
+              <MediaQuery query={device.max.desktop}>
               <nav className="navbar">
                 <ul className="navbar_menu">
                   {/*<li>
@@ -124,6 +134,7 @@ class NavBar extends Component {
                   <i className="fa fa-bars" aria-hidden="true"></i>
                     </div>*/}
               </nav>
+              </MediaQuery>
             </div>
           </div>
         </div>

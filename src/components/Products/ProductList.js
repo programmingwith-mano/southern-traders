@@ -366,6 +366,7 @@ if (props.match.params.item === 'SPICES') {
 }
   return (
     <div className="align-items-center" >
+      <br/>
       <Link to="/southern-traders">
       <Button style={{marginLeft: '20px'}} alignItems={'Center'}
     color="primary"
@@ -400,6 +401,13 @@ if (props.match.params.item === 'SPICES') {
 }   
   </tbody>
 </Table>
+<Link to="/southern-traders">
+      <Button style={{marginLeft: '20px'}} alignItems={'Center'}
+    color="primary"
+  >
+    Back
+  </Button>
+  </Link>
     </div>
   );
 }
