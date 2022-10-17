@@ -16,7 +16,10 @@ class App extends Component {
     this.state = {};
   }
   componentDidMount() {
-    AOS.init();
+    AOS.init({
+      easing: 'ease',
+      once: true
+    });
   }
   render() {
     return (

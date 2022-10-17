@@ -37,15 +37,14 @@ class NavBar extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-left">
-            {/*<div className="col">
-              <img height={100} width={100} src="logo.jpg" />
-            </div>*/}
               <div className="logo_container">
                 <Link to="/southern-traders">
                   <table>
                     <tr>
-                      <td>
-                        <img height={40} width={40} src={Logo} />
+                    <td>
+                      <MediaQuery query={device.max.tabletL}>
+                        <img height={50} width={40} src={Logo} />
+                      </MediaQuery>
                       </td>
                       <td>
                       ஸ்ரீ சதா்ன் <span>டிரேடா்ஸ்</span><br/>

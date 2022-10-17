@@ -19,8 +19,8 @@ function CategoryBanner(props) {
               style={{
                 backgroundImage: `url(${Banner5})`
               }}
-              data-aos="fade-up" data-aos-offset="400"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-up" data-aos-offset="100"
+              
             >
               <div className="banner_category">
                 <Link to="/southern-traders/productlist/DRYFURITS">DRYFURITS</Link>
@@ -33,11 +33,9 @@ function CategoryBanner(props) {
               style={{
                 backgroundImage: `url(${Banner1})`
               }}
-              data-aos="fade-down-right" data-aos-offset="400"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-down-right" data-aos-offset="100"
             >
               <div className="banner_category">
-                {/*<a onClick={go('/southern-traders/productlist')} href="#">SPICES</a>*/}
                 <Link to="/southern-traders/productlist/SPICES">SPICES</Link>
               </div>
             </div>
@@ -48,8 +46,7 @@ function CategoryBanner(props) {
               style={{
                 backgroundImage: `url(${Banner2})`
               }}
-              data-aos="fade-up" data-aos-offset="400"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-up" data-aos-offset="100"
             >
               <div className="banner_category">
               <Link to="/southern-traders/productlist/PACKING">GROCERIES</Link>
@@ -64,8 +61,7 @@ function CategoryBanner(props) {
               style={{
                 backgroundImage: `url(${Banner3})`
               }}
-              data-aos="fade-left" data-aos-offset="400"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-left" data-aos-offset="100"
             >
               <div className="banner_category">
                 <Link to="/southern-traders/productlist/MILLETS">MILLETS</Link>
@@ -78,28 +74,13 @@ function CategoryBanner(props) {
               style={{
                 backgroundImage: `url(${Banner4})`
               }}
-              data-aos="fade-right" data-aos-offset="400"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-right" data-aos-offset="100"
             >
               <div className="banner_category">
                 <Link to="/southern-traders/productlist/HERBALS">HERBALS</Link>
               </div>
             </div>
           </div>
-          {/*<div className="col-md-4">
-            <div
-              className="banner_item align-items-center"
-              style={{
-                backgroundImage: `url(${Banner6})`
-              }}
-              data-aos="fade-down-left" data-aos-offset="400"
-              data-aos-easing="ease-in-sine"
-            >
-              <div className="banner_category">
-                <Link to="/southern-traders/productlist/OTHERS">OTHERS</Link>
-              </div>
-            </div>
-          </div>*/}
         </div>
       </div>
     </div>
