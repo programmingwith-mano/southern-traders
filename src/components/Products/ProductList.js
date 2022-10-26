@@ -108,7 +108,11 @@ const PACKING = [{itemTam: 'கார்ன் மாவு', item: 'Corn Flour'
 {itemTam: 'ஆர் . கே குலோப்ஜாமுன்', item: 'Orkay'},
 {itemTam: 'ஆப்பிள் வினிகர் ', item: 'Apple Vinegar'},
 {itemTam: 'வினிகர் 200.மி.லி', item: 'VINEGAR 200ML'},
-{itemTam: 'வினிகர் 750 மிலி ', item: 'VINEGAR 750ML'}
+{itemTam: 'வினிகர் 750 மிலி ', item: 'VINEGAR 750ML'},
+{itemTam: 'சம்பா வத்தல்', item: 'Spicy Red Chilli'},
+{itemTam: 'குண்டு வத்தல்', item: 'Red Chilli'},
+{itemTam: 'மல்லி', item: 'Coriander'},
+{itemTam: 'நாட்டு மல்லி', item: 'Country Coriander'}
 ]
 const OTHERS = [
   {item : 'SWEET SOMBHU 1KG', itemTam: 'ஸ்விட் சோம்பு 1கிலோ'},
