@@ -6,6 +6,7 @@
 
 let history;
 export const registerNav = ref => {
+  console.log('----------------------------------------------'+JSON.stringify(ref.history));
   history = ref.history;
 };
 

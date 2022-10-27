@@ -6,10 +6,10 @@
 
 import React, { Component } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Redirect,
   Route,
-  Switch
+  HashRouter 
 } from "react-router-dom";
 import { registerNav } from "../modules/Navigation";
 import { createBrowserHistory } from "history";
@@ -19,15 +19,8 @@ import PrivateRoutes from "./PrivateRoutes";
 import Auth from "../modules/Auth";
 
 const PrivateRouter = ({ component, ...options }) => {
-  const finalComponent =
-    Auth.getUserDetails() !== undefined &&
-    Auth.getUserDetails() !== null &&
-    Auth.getToken() !== undefined ? (
-      <Route {...options} component={component} />
-    ) : (
-      <Redirect to="/PageNotFound" />
-    );
-
+  console.log('...options', options);
+  const finalComponent = <Route {...options} component={component} />
   return finalComponent;
 };
 
@@ -43,7 +36,6 @@ class Routes extends Component {
     return (
       <div>
         <Router ref={registerNav}>
-          <Switch>
             {HomeRoutes.map((homeRoute, index) => {
               return (
                 <Route
@@ -60,24 +52,7 @@ class Routes extends Component {
                 />
               );
             })}
-            {PrivateRoutes.map((privateRoute, index) => {
-              return (
-                <PrivateRouter
-                  key={index}
-                  path={privateRoute.path}
-                  exact={privateRoute.exact}
-                  component={props => {
-                    return (
-                      <privateRoute.layout {...props}>
-                        <privateRoute.component {...props} />
-                      </privateRoute.layout>
-                    );
-                  }}
-                />
-              );
-            })}
-            <Route Redirect to="/PageNotFound" exact component={PageNotFound} />
-          </Switch>
+            
         </Router>
       </div>
     );

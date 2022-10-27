@@ -12,12 +12,14 @@ import { Redirect } from "react-router-dom";
 import BaseLayout from "../layouts/BaseLayout";
 
 import CartContainer from "../views/Cart/CartContainer";
+import HomeContainer from "../views/Home/HomeContainer";
 
 var PrivateRoutes = [
   {
-    path: "/southern-traders/cart",
+    path: "/southern-traders",
+    exact: true,
     layout: BaseLayout,
-    component: CartContainer,
+    component: HomeContainer,
   },
 ];
 

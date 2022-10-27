@@ -11,6 +11,7 @@ import go from "../../modules/Navigation";
 function CategoryBanner(props) {
   return (
     <div className="banner">
+      <marquee><b> Shop Opening Hours - 10 AM to 10 PM - Sunday Holiday </b></marquee>
       <div className="container" style={{marginBottom: '30px', marginTop: '30px'}}>
         <div className="row">
         <div className="col-md-4">

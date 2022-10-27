@@ -19,8 +19,9 @@ var routes = [
   },
   {
     path: "/home",
+    exact: true,
     layout: BaseLayout,
-    component: () => <Redirect to="/southern-traders" />,
+    component: Home,
   },
   {
     path: "/southern-traders/single-product/:id",
@@ -39,8 +40,9 @@ var routes = [
   },
   {
     path: "/",
+    exact: true,
     layout: BaseLayout,
-    component: () => <Redirect to="/southern-traders" />,
+    component: Home,
   }
 ];
 
