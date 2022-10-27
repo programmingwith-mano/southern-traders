@@ -56,7 +56,7 @@ class NavBar extends Component {
               </div>
               <MediaQuery query={device.max.tabletL}>
                 <div style={{textAlign: 'right'}}>
-                        <a href="http://wa.me/+919655366676"><img height={30} width={30} src={WhatsappLogo}></img><br/>FOR ORDERS CONTACT: <br/>+91 9655366676</a>                 
+                        <a href="https://wa.me/+919655366676"><img height={30} width={30} src={WhatsappLogo}></img><br/>FOR ORDERS CONTACT: <br/>+91 9655366676</a>                 
                 </div>
               </MediaQuery>
               <MediaQuery query={device.max.desktop}>
@@ -101,7 +101,7 @@ class NavBar extends Component {
                     <a href="contact.html">contact</a>
                   </li>*/}
                   <li>
-                      <a href="http://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img>FOR ORDERS CONTACT: +91 9655366676</a>
+                      <a href="https://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img>FOR ORDERS CONTACT: +91 9655366676</a>
                   </li>
                 </ul>
                 {/*<ul className="navbar_user">

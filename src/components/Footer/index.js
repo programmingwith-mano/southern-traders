@@ -1,8 +1,4 @@
-/*
- ** Author: Santosh Kumar Dash
- ** Author URL: http://santoshdash.epizy.com/
- ** Github URL: https://github.com/quintuslabs/fashion-cube
- */
+
 
 import React from "react";
 import WhatsappLogo from "../../assets/images/whatsapp.png";
@@ -45,7 +41,7 @@ function Footer(props) {
               <ul>
                   
                   <li>
-                      <a href="http://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img>For orders contact: +91 9655366676</a>
+                      <a href="https://wa.me/+919655366676"><img height={50} width={50} src={WhatsappLogo}></img>For orders contact: +91 9655366676</a>
                   </li>
               </ul>
             </div>
